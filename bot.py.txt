@@ -1,0 +1,19 @@
+import discord
+
+TOKEN = "MTQ3MjcyMjc3NTIzMDY0NDM5OA.GGPlVb.O10ULiS3yEKh4nIjucyEqEvFAvNJ7tiMt7WHkE"
+VOICE_CHANNEL_ID = 1472723617774178455
+
+intents = discord.Intents.default()
+intents.guilds = True
+intents.voice_states = True
+
+client = discord.Client(intents=intents)
+
+@client.event
+async def on_ready():
+    print("Bot is ready")
+    channel = client.get_channel(VOICE_CHANNEL_ID)
+    if channel:
+        await channel.connect()
+
+client.run(TOKEN)
