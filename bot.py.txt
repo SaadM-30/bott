@@ -1,6 +1,6 @@
 import discord
 
-TOKEN = "MTQ3MjcyMjc3NTIzMDY0NDM5OA.GGPlVb.O10ULiS3yEKh4nIjucyEqEvFAvNJ7tiMt7WHkE"
+TOKEN ="حط_توكنك_هنا""
 VOICE_CHANNEL_ID = 1472723617774178455
 
 intents = discord.Intents.default()
